@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       body{
+        
+        background-color: springgreen;
+       }
+        .container{            
+            display: grid;
+           
+        }
+        
+        .left{
+            height: 50px;
+            width: 50px;
+            background-color: yellow;
+            position: relative;
+            margin-top: 300px;
+            margin-left: 20px;
+            border-radius: 50px;
+            animation-name: left;
+            border: 2px solid black;
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
+
+        }
+        @keyframes left{
+            0%{
+                background-color: cadetblue;
+                margin-left: 20px;
+                height: 50px;
+                width: 50px;
+
+            }
+            50%{
+                background-color: aqua;
+                margin-left: 510px;
+                width: 100px;
+                height: 100px;
+            }
+        } 
+         .top{
+            height: 50px;
+            width: 50px;
+            background-color: antiquewhite;
+            position: absolute;
+            border-radius: 50px;
+            animation-name: top;
+            border: 2px solid black;
+            animation-duration: 2s;
+            margin-left: 600px;
+            animation-iteration-count: infinite;
+
+        }
+        @keyframes top{
+            0%{
+                background-color:blue;
+                margin-top: 20px;
+                height: 50px;
+                width: 50px;
+
+            }
+            50%{
+                background-color:brown;
+                margin-top: 250px;
+                width: 100px;
+                height: 100px;
+            }
+        } 
+        .right{
+            height: 50px;
+            width: 50px;
+            background-color: rgb(238, 138, 6);
+            position: relative;
+            border-radius: 50px;
+            animation-name: right;
+            border: 2px solid black;
+            animation-duration: 2s;
+            margin-top: -100px;
+            margin-left: 1270px;
+            animation-iteration-count: infinite;
+
+        }
+        @keyframes right{
+            0%{
+                background-color:blue;
+                height: 50px;
+                width: 50px;
+
+            }
+            50%{
+                background-color:chartreuse;
+                margin-left: 690px;
+                width: 100px;
+                height: 100px;
+            }
+        } 
+    
+         .bottom{
+            height: 50px;
+            width: 50px;
+            background-color:blueviolet;
+            position: absolute;
+            border-radius: 50px;
+            animation-name: bottom;
+            border: 2px solid black;
+            animation-duration: 2s;
+            margin-left: 599px;
+            margin-top: 600px;
+            animation-iteration-count: infinite;
+        }
+        @keyframes bottom{
+           0%{
+                background-color:crimson;
+                margin-top:600px;
+                height: 50px;
+                width: 50px;
+
+            }
+            50%{
+                background-color:tomato;
+                margin-top:353px;
+                width: 100px;
+                height: 100px;
+            }
+        } 
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="left"></div>
+        <div class="top"></div>
+        <div class="right"></div>
+        <div class="bottom"></div>
+    </div>
+</body>
+</html>

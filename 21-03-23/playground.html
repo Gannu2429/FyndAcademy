@@ -1,0 +1,104 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin: 0;
+        }
+.container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    height: 100vh;
+    background-color:tomato;
+    animation-duration: 5s;
+}
+
+.animigridDemo{
+    border: 2px solid navajowhite;
+}
+
+
+#left:hover{
+   width: 600px;
+   background-color: navajowhite;
+}
+#middle:hover{
+   width: 600px;
+   background-color: navajowhite;
+}
+
+#right:hover{
+   width: 600px;
+   background-color: navajowhite;
+}
+ @keyframes leftdemo{
+    from{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    to{
+        grid-template-columns: 2fr 1fr 1fr;
+
+    }
+} 
+h2{
+    text-align: center;
+}
+p{
+    text-align: center;
+}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="animigridDemo" id="left">
+            <h2>HTML</h2>
+            <p>HTML (Hypertext Markup Language) is a text-based approach to describing how content contained within an HTML file is structured. This markup tells a web browser how to display text, images and other forms of multimedia on a webpage.
+
+                HTML is a formal recommendation by the World Wide Web Consortium (W3C) and is generally adhered to by all major web browsers, including both desktop and mobile web browsers. HTML5 is the latest version of the specification.
+                
+                How HTML works
+                HTML is a text file containing specific syntax, file and naming conventions that show the computer and the web server that it is in HTML and should be read as such. By applying these HTML conventions to a text file in virtually any text editor, a user can write and design a basic webpage, and then upload it to the internet.
+                
+                The most basic of HTML conventions is the inclusion of a document type declaration at the beginning of the text file. This always comes first in the document, because it is the piece that affirmatively informs a computer that this is an HTML file. The document header typically looks like this: <!DOCTYPE html>. It should always be written that way, without any content inside it or breaking it up. Any content that comes before this declaration will not be recognized as HTML by a computer.
+                
+                Doctypes are not just used for HTML, they can apply to the creation of any document that uses SGML (Standard Generalized Markup Language). SGML is a standard for specifying a specific markup language being used. HTML is one of several markup languages that SGML and doctype declarations apply to.
+                
+                The other critical requirement for creating an HTML file is saving it with a .html file extension. Whereas the doctype declaration signals HTML to the computer from the inside of the file, the file extension signals HTML to the computer from the outside of the file. By having both, a computer can tell that it's an HTML file whether it's reading the file or not.</p>
+        </div>
+        <div class="animigridDemo" id="middle">
+            <h2>CSS</h2>
+            <p>CSS stands for Cascading Style Sheets. It is a style sheet language which is used to describe the look and formatting of a document written in markup language. It provides an additional feature to HTML. It is generally used with HTML to change the style of web pages and user interfaces. It can also be used with any kind of XML documents including plain XML, SVG and XUL.
+
+                CSS is used along with HTML and JavaScript in most websites to create user interfaces for web applications and user interfaces for many mobile applications.
+                
+                What does CSS do
+                You can add new looks to your old HTML documents.
+                You can completely change the look of your website with only a few changes in CSS code.
+                Why use CSS
+                These are the three major benefits of CSS:
+                
+                1) Solves a big problem
+                Before CSS, tags like font, color, background style, element alignments, border and size had to be repeated on every web page. This was a very long process. For example: If you are developing a large website where fonts and color information are added on every single page, it will be become a long and expensive process. CSS was created to solve this problem</p>
+        </div>
+        <div class="animigridDemo" id="right">
+            <h2>JavaScript</h2>
+            <p>JavaScript is a dynamic computer programming language. It is lightweight and most commonly used as a part of web pages, whose implementations allow client-side script to interact with the user and make dynamic pages. It is an interpreted programming language with object-oriented capabilities.
+
+                JavaScript was first known as LiveScript, but Netscape changed its name to JavaScript, possibly because of the excitement being generated by Java. JavaScript made its first appearance in Netscape 2.0 in 1995 with the name LiveScript. The general-purpose core of the language has been embedded in Netscape, Internet Explorer, and other web browsers.
+                
+                The ECMA-262 Specification defined a standard version of the core JavaScript language.
+                
+                JavaScript is a lightweight, interpreted programming language.
+                Designed for creating network-centric applications.
+                Complementary to and integrated with Java.
+                Complementary to and integrated with HTML.
+                Open and cross-platform</p>
+        </div>
+    </div>
+   
+</body>
+</html>

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color:springgreen;
+        }
+        .cup img{
+            margin-left: 700px;
+            margin-top: 240px;
+            position: absolute;
+            z-index: -1;
+            
+        }
+        .sm1{
+            height: 10px;
+            width: 10px;
+            position: absolute;
+            border-radius: 50px;
+            margin-top: 330px;
+            margin-left: 850px;
+            z-index: 1;
+            animation-name: sm1;
+            animation-duration: 6s;
+            animation-iteration-count: infinite;
+            animation-fill-mode:forwards;
+            background-image: radial-gradient(whitesmoke 10% white 11%);    
+        }
+        @keyframes sm1{
+            0%{
+                background-color: rgb(223, 223, 223);
+                margin-top:330px;            
+                height: 10px;
+                width: 10px;
+            }
+            50%{
+                background-color: whitesmoke;
+                margin-top: 0px;
+                height: 100px;
+                width: 100px;
+            }
+        }
+        .sm2{
+            height: 10px;
+            width: 10px;
+            position: absolute;
+            border-radius: 50px;
+            margin-top: 330px;
+            margin-left: 880px;
+            z-index: -1;
+            animation-name: sm2;
+            animation-duration: 8s;
+            animation-iteration-count: infinite;
+            background-image: radial-gradient(45deg whitesmoke 10% black 11%);    
+        }
+        @keyframes sm2{
+            0%{
+                background-color: rgb(223, 223, 223);
+                margin-top:330px;             
+                height: 10px;
+                width: 10px;
+            }
+            50%{
+                background-color: whitesmoke;
+                margin-top: 100px;
+                height: 80px;
+                width: 80px;
+            }
+        }
+        .sm3{
+            height: 10px;
+            width: 10px;
+            position: absolute;
+            border-radius: 50px;
+            margin-top: 330px;
+            margin-left: 900px;
+            z-index: -1;
+            animation-name: sm3;
+            animation-duration: 4s;
+            animation-iteration-count: infinite;
+               
+        }
+        @keyframes sm3{
+            0%{
+                background-color: rgb(223, 223, 223);
+                margin-top:330px;             
+                height: 10px;
+                width: 10px;
+            }
+            50%{
+                background-color: whitesmoke;
+                margin-top: 100px;
+                height: 60px;
+                width: 60px;
+                background-image: radial-gradient(to right whitesmoke 10% black 11%); 
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="cup">
+        <img src="https://cdn.pixabay.com/photo/2013/07/13/09/51/drink-156144__340.png" alt="cup">
+    </div>
+    <div class="sm1"></div>
+    <div class="sm2"></div>
+    <div class="sm3"></div>
+</body>
+</html>
