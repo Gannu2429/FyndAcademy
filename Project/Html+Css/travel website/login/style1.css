@@ -1,0 +1,20 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+/* Sign section start */
+.sign{
+    height: 400px;
+    width: 300px;
+    background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),url(./images/background\ img.png);
+    background-position: center;
+    /* background-size: cover; */
+    position: relative;
+    /* align-items: center; */
+    align-content: center;
+}
+
+
+
+/* sign section end */
